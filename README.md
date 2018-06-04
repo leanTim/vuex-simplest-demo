@@ -5,7 +5,7 @@
 vue+vuex 的一个小demo
 通过vue-cli 搭建 `vue init webpack foldername`
 
-在vuex的actions里通过 [fetch][https://segmentfault.com/a/1190000007019545]  异步请求数据(本地的data.json)
+在vuex的actions里通过 [fetch](https://segmentfault.com/a/1190000007019545)  异步请求数据(本地的data.json)
 
 中间遇到一个小问题 刚开始直接在`actions`里 用fetch请求`data.json ` 但是请求返回的一直是一个空白页面，请求不到`data.json`
 
