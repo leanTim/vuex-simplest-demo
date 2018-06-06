@@ -1,6 +1,8 @@
 'use strict'
 const path = require('path')
 const config = require('../config')
+//将打包后的css文件通过link的方式引入html中
+//如果不用这个插件的css代码会放到head标签的style标签中
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const packageConfig = require('../package.json')
 

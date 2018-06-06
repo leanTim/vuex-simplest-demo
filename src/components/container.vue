@@ -5,6 +5,11 @@
 			<span v-if="fa === 'home'" class="head-tips">第一周</span>
 			<span v-if="fa === 'list'" class="head-tips">第{{listNum}}题</span>
 		</header>
+        <div class="alert-box" @click="alertTest">
+            <div class="try-me">
+                try me!
+            </div>
+        </div>
 		<div v-if="fa == 'home'">
 			<div class="middle logo-one"></div>
 			<router-link to="list" class="start button-style"></router-link>
@@ -68,7 +73,16 @@ export default {
 				this.nextQuestion(this.choosedId)
 				this.$router.push('result')
 			}
-		}
+		},
+        alertTest: function () {
+            this.$swal({
+                title: 'good job',
+                text: 'beaugify alery',
+                type: 'success',
+                width: 200,
+                padding: 5
+            })
+        }
     },
     props: ['fa'],
     created() {
@@ -154,5 +168,17 @@ li {
 }
 .choosed {
 	color: forestgreen;
+}
+.alert-box {
+    position: absolute;
+    top: 10rem;
+    width: 4rem;
+    height: 1.5rem;
+    background-color: yellowgreen;
+    font-size: 0.83rem;
+    text-align: center;
+    line-height: 1.5rem;
+    left: 36%;
+    z-index: 20;
 }
 </style>

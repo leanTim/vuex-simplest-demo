@@ -1,9 +1,10 @@
 'use strict'
 require('./check-versions')()
-
+//生产环境
 process.env.NODE_ENV = 'production'
-
+//用于编译产生loading效果
 const ora = require('ora')
+//编译时清空dist文件夹，避免多次编译造成文件的重复合和混乱  (rm -rf)
 const rm = require('rimraf')
 const path = require('path')
 const chalk = require('chalk')
