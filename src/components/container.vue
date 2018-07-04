@@ -5,11 +5,6 @@
 			<span v-if="fa === 'home'" class="head-tips">第一周</span>
 			<span v-if="fa === 'list'" class="head-tips">第{{listNum}}题</span>
 		</header>
-        <div class="alert-box" @click="alertTest">
-            <div class="try-me">
-                try me!
-            </div>
-        </div>
 		<div v-if="fa == 'home'">
 			<div class="middle logo-one"></div>
 			<router-link to="list" class="start button-style"></router-link>
