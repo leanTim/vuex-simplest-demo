@@ -2,6 +2,7 @@
 	<div>
 		<header class="header">
 			<img style="display: none" src="../images/1-1.jpg" alt="">
+			<img style="display: none" src="../images/4-1.jpg" alt="">
 			<span v-if="fa === 'home'" class="head-tips">第一周</span>
 			<span v-if="fa === 'list'" class="head-tips">第{{listNum}}题</span>
 		</header>
